@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>affiche</title>
+    <title>compteur</title>
 </head>
 <body>
   <center> <p> votre texte  : <br />
@@ -12,5 +12,21 @@
 </p><br /><br /><br />
 <p>Vous avez {{liste_mots}} mots dans votre texte !</p>
 </center>
+
+<br />
+<br />
+
+<center>
+
+{% for key, value in to_sort %}
+{{ key }} ==> {{ value }}
+<br />
+{% endfor %}
+
+</center>
+
+
+
+
 </body>
 </html>
